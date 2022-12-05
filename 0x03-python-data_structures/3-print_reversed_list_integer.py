@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
 
-def print_reversed_list_integer(my_list):
-    length_of_list = len(my_list)
-    reverse_index = -1
+def print_reversed_list_integer(my_list=[]):
 
-    while reverse_index >= (-length_of_list):
-        print("{:d}".format(my_list[reverse_index]))
-        reverse_index -= 1
+    if not my_list:
+        pass
+    else:
+        my_list.reverse()
+        for u in range(len(my_list)):
+            print("{:d}".format(my_list[u]))
