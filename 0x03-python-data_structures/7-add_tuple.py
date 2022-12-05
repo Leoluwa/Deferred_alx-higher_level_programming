@@ -2,7 +2,6 @@
 
 
 def add_tuple(tuple_a=(), tuple_b=()):
-
     length_a = len(tuple_a)
     length_b = len(tuple_b)
 
