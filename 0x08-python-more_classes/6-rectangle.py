@@ -5,11 +5,15 @@ Defines class called Rectangle :)
 
 
 class Rectangle:
-    ''' A definition of a rectangle based on 4-rectangle.py :) '''
+    ''' Keeps count of instances of this class :) '''
+    number_of_instances = 0
+
+    ''' A definition of a rectangle based on 5-rectangle.py :) '''
     def __init__(self, width=0, height=0):
         ''' Initializing the rectangle object :) '''
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -67,3 +71,4 @@ class Rectangle:
     def __del__(self):
         ''' prints a message when an instance of this class is deleted :) '''
         print('Bye rectangle...')
+        Rectangle.number_of_instances -= 1
