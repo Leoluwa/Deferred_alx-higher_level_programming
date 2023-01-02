@@ -5,7 +5,7 @@ Defines class called Rectangle :)
 
 
 class Rectangle:
-    ''' A definition of a rectangle based on 1-rectangle.py :) '''
+    ''' A definition of a rectangle based on 2-rectangle.py :) '''
     def __init__(self, width=0, height=0):
         ''' Initializing the rectangle object :) '''
         self.width = width
@@ -48,3 +48,12 @@ class Rectangle:
         if (self.__width == 0) or (self.__height == 0):
             return 0
         return (self.__width * 2) + (self.__height * 2)
+
+    def __str__(self):
+        ''' returns nicely printable representation of the rectangle :) '''
+        string = ''
+        if (self.__width == 0) and ( self.__height == 0):
+            return string
+        else:
+            string += '\n'.join('#' * self.__width for j in range(self.__height))
+            return string
