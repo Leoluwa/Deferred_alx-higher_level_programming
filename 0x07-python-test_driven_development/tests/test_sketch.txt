@@ -1,0 +1,25 @@
+~ no arguments passed
+
+~ one argument passed
+	matrix passed, div not passed
+	div passed, matrix not passed
+
+~ div passed as non-number
+
+~ div passed as zero, 0
+
+~ matrix passed as not a list of lists of numbers, div passed as number
+
+~ matrix passed as not a list of lists of numbers, div passed as non-number
+
+~ matrix passed list of lists of numbers, div passed as non-number
+
+~ matrix passed as a list of lists of numbers, div passed as number
+
+~ matrix passed with different row sizes
+
+~ matrix not passed as a list of lists
+
+~ matrix not passed as a list of lists of numbers
+
+~ matrix passed as zero, 0
